@@ -1,0 +1,56 @@
+[
+    {
+        "IpProtocol": "-1", 
+        "IpRanges": [], 
+        "UserIdGroupPairs": [
+            {
+                "UserId": "_ACCOUNTID_",
+                "GroupId": "_GROUPID_"
+            }
+        ]
+    }, 
+    {
+        "ToPort": 3389, 
+        "IpProtocol": "tcp", 
+        "IpRanges": [
+            {
+                "CidrIp": "203.0.113.0/24"
+            }
+        ], 
+        "UserIdGroupPairs": [], 
+        "FromPort": 3389
+    }, 
+    {
+        "ToPort": 22, 
+        "IpProtocol": "tcp", 
+        "IpRanges": [
+            {
+                "CidrIp": "203.0.113.0/24"
+            }
+        ], 
+        "UserIdGroupPairs": [], 
+        "FromPort": 22
+    }, 
+    {
+        "ToPort": 80, 
+        "IpProtocol": "tcp", 
+        "IpRanges": [
+            {
+                "CidrIp": "0.0.0.0/0"
+            }
+        ], 
+        "UserIdGroupPairs": [], 
+        "FromPort": 80
+    }, 
+    {
+        "ToPort": 443, 
+        "IpProtocol": "tcp", 
+        "IpRanges": [
+            {
+                "CidrIp": "0.0.0.0/0"
+            }
+        ], 
+        "UserIdGroupPairs": [], 
+        "FromPort": 443
+    }
+]
