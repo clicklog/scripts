@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sg="mydefaultsecuritygroup"
+sg="mysg"
 desc="My Default Security Group"
 
 accountid=`aws iam get-user --query 'User.Arn' | perl -pe 's#"arn:aws:iam::([0-9]+):user/.*#$1#'`
